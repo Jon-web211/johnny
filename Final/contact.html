@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonathan's Photography</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="photo/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="homepage.html">HOME</a></li>
+          <li><a href="about me.html">ABOUT US</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="feedback.html">FEEDBACK</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<h1>Contact Us</h1>
+</section>
+<!--------------Contact us-------------->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d401048.2003055047!2d-
+    104.92074843997817!3d38.2519208938825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s
+    0x8713a2f3071bb165%3A0xa82d6ba368c7b82e!2sPueblo%2C%20CO!5e0!3m2!1sen!2sus!4v17333818147
+    95!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>XYZ Roud, ABC Buiding</h5>
+                    <p>Pueblo, Colorado, USA</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+1 0123456789</h5>
+                    <p>Moday to Sturday </p>
+                </span>
+            </div>
+            <div>
+              <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>Info@johnnyphoto.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <from action="form handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <input type="text" name="subject" placeholder="Enter your question" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn"> Send Message</button>   
+            </from>
+
+
+        </div>
+    </div>
+<section>
+
+</section>
+
+<!---------------Footer--------------->
+<section class="footer">
+  <h4>About us</h4>
+  <p>My mission is to deliver exceptional photographic artistry that preserves your most precious moments<br>
+  with uncompromising quality and attention to detail..</p>
+  <div class="icons">
+    <i class="fa fa-facebook-square"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin-square"></i>
+  </div>
+  <p>made with <i class="fa fa-heart-o"> by Jonathan</i></p>
+</section>
+
+
+
+<!------ JavaScript for Toggle Menu --------->
+<script>
+  var navLinks= document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right="0";
+  }
+  function hideMenu(){
+    navLinks.style.right="-200px";
+  }
+
+</script>
+  
+</body>
+</html>
